@@ -6,7 +6,7 @@ services:
      links:
        - db
      volumes:
-       - ./www:/srv/www/web
+       - ./src/www:/srv/www
      env_file: env
   db:
      network_mode: bridge

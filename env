@@ -1,2 +1,13 @@
+#Host
 VIRTUAL_HOST=dinodrives.localhost
 DEFAULT_HOST=dinodrives.localhost
+YII_ENV=dev
+YII_DEBUG=true
+
+#Database
+DB_HOST=db
+DB_NAME=dinodrives
+DB_PASS=root
+DB_USER=root
+
+
