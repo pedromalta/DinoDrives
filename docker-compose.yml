@@ -1,0 +1,17 @@
+version: '2'
+services:
+  web:
+     network_mode: bridge
+     build: .
+     links:
+       - db
+     volumes:
+       - ./www:/srv/www/web
+     env_file: env
+  db:
+     network_mode: bridge
+     image: mysql
+     command: --max_allowed_packet=512M --net_write_timeout=3600
+     environment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: dinodrives
